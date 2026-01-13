@@ -60,7 +60,7 @@ git push -u origin main
 
 In `index.html`, search and replace ALL instances of:
 ```
-https://adityagupta.dev/
+https://portfolio-interactive-zeta.vercel.app/
 ```
 With your actual URL (e.g., `https://your-project.vercel.app/`)
 
