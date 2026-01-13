@@ -106,7 +106,7 @@ Both Vercel and Netlify provide free CDN automatically.
 ## Monitoring
 
 ### Check SEO
-- [PageSpeed Insights](https://portfolio-interactive-zeta.vercel.app)
+- [PageSpeed Insights](https://pagespeed.web.dev/)
 - [GTmetrix](https://gtmetrix.com/)
 - Google Search Console
 
