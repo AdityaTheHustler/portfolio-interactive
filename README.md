@@ -12,7 +12,7 @@
 
 <div align="center">
 
-![Portfolio Screenshot](./screenshot.png)
+![Portfolio Preview](./image.png)
 *Live portfolio with gamified hiring protocol*
 
 </div>
