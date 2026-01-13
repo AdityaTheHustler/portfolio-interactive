@@ -1,6 +1,6 @@
 # Interactive Portfolio
 
-[![Live Demo](https://img.shields.io/badge/demo-live-00FF41?style=for-the-badge)](https://adityagupta.dev)
+[![Live Demo](https://img.shields.io/badge/demo-live-00FF41?style=for-the-badge)](https://portfolio-interactive-zeta.vercel.app)
 [![GitHub](https://img.shields.io/badge/github-portfolio-00FFFF?style=for-the-badge&logo=github)](https://github.com/AdityaTheHustler/portfolio-interactive)
 [![LinkedIn](https://img.shields.io/badge/linkedin-connect-00FFFF?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/adityathehustler/)
 
