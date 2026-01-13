@@ -27,7 +27,7 @@ git push -u origin main
 4. Select `portfolio-interactive`
 5. Click "Deploy"
 6. Wait 2 minutes
-7. Copy your URL (e.g., `https://portfolio-interactive.vercel.app`)
+7. Copy your URL (e.g., `portfolio-interactive-zeta.vercel.app`)
 
 ## Step 4: Update Sitemap (After Deploy)
 
@@ -36,14 +36,14 @@ After Vercel gives you the URL, update:
 **File: `sitemap.xml`**
 Replace line 7:
 ```xml
-<loc>https://portfolio-interactive.vercel.app/</loc>
+<loc>portfolio-interactive-zeta.vercel.app/</loc>
 ```
 With your actual Vercel URL.
 
 **File: `robots.txt`**
 Replace line 5:
 ```
-Sitemap: https://portfolio-interactive.vercel.app/sitemap.xml
+Sitemap: https://portfolio-interactive-zeta.vercel.app/sitemap.xml
 ```
 With your actual Vercel URL.
 
@@ -76,8 +76,7 @@ On GitHub repo page:
 
 Your portfolio is now live and SEO-optimized.
 
-Test at: https://portfolio-interactive.vercel.app/
-
+Test at: https://portfolio-interactive-zeta.vercel.app
 ## Optional: Custom Domain
 
 If you have a domain:
