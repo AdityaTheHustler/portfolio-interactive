@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Primary Meta Tags -->
+    <title>Aditya Gupta | Full Stack Developer & AI Specialist</title>
+    <meta name="title" content="Aditya Gupta | Full Stack Developer & AI Specialist" />
+    <meta name="description"
+        content="Interactive portfolio with gamified hiring protocol. Full Stack Developer specializing in AI/ML, React, Python, and system architecture. Play games to unlock contact." />
+    <meta name="keywords"
+        content="Aditya Gupta, Full Stack Developer, AI Specialist, Machine Learning, Python Developer, React Developer, Portfolio, Interactive Portfolio, Game Developer, adityathehustler" />
+    <meta name="author" content="Aditya Gupta" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://adityagupta.dev/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://adityagupta.dev/" />
+    <meta property="og:title" content="Aditya Gupta | Full Stack Developer & AI Specialist" />
+    <meta property="og:description"
+        content="Interactive portfolio with gamified hiring protocol. Solve challenges to unlock professional contact." />
+    <meta property="og:image" content="https://adityagupta.dev/preview.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://adityagupta.dev/" />
+    <meta property="twitter:title" content="Aditya Gupta | Full Stack Developer & AI Specialist" />
+    <meta property="twitter:description"
+        content="Interactive portfolio with gamified hiring protocol. Full Stack Developer specializing in AI/ML and modern web technologies." />
+    <meta property="twitter:image" content="https://adityagupta.dev/preview.png" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "matrix": "#00FF41",
+                        "matrix-dim": "#008F11",
+                        "matrix-dark": "#003B00",
+                        "neon-cyan": "#00FFFF",
+                        "retro-bg": "#050505",
+                        "surface-term": "#0D1117",
+                        "alert": "#FF3333",
+                    },
+                    fontFamily: {
+                        "mono": ["'Share Tech Mono'", "monospace"],
+                    },
+                    backgroundImage: {
+                        'scanlines': "linear-gradient(to bottom, rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06))",
+                        'grid-retro': "linear-gradient(to right, #003B00 1px, transparent 1px), linear-gradient(to bottom, #003B00 1px, transparent 1px)",
+                        'soundwave': "repeating-linear-gradient(90deg, transparent, transparent 2px, #00FFFF 2px, #00FFFF 4px)",
+                    },
+                    boxShadow: {
+                        'neon': '0 0 10px rgba(0, 255, 65, 0.5), 0 0 20px rgba(0, 255, 65, 0.3)',
+                        'neon-cyan': '0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3)',
+                        'crt': 'inset 0 0 100px rgba(0,0,0,0.9)',
+                    },
+                    animation: {
+                        'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'flicker': 'flicker 0.15s infinite',
+                        'bar-dance': 'barDance 1s infinite alternate',
+                    },
+                    keyframes: {
+                        flicker: {
+                            '0%': { opacity: '0.9' },
+                            '50%': { opacity: '1.0' },
+                            '100%': { opacity: '0.9' },
+                        },
+                        barDance: {
+                            '0%': { height: '10%' },
+                            '100%': { height: '100%' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #000;
+        }
+
+        .text-glow {
+            text-shadow: 0 0 5px #00FF41;
+        }
+
+        .text-glow-cyan {
+            text-shadow: 0 0 5px #00FFFF;
+        }
+
+        .scanline-overlay {
+            background: linear-gradient(to bottom,
+                    rgba(255, 255, 255, 0),
+                    rgba(255, 255, 255, 0) 50%,
+                    rgba(0, 0, 0, 0.2) 50%,
+                    rgba(0, 0, 0, 0.2));
+            background-size: 100% 4px;
+            pointer-events: none;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #000;
+            border-left: 1px solid #003B00;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #008F11;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00FF41;
+        }
+
+        .typing-effect {
+            border-right: 2px solid #00FF41;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: #00FF41;
+            }
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Glitch Effect */
+        @keyframes glitch-anim-1 {
+            0% {
+                clip-path: inset(20% 0 80% 0);
+                transform: translate(-4px, 2px);
+            }
+
+            20% {
+                clip-path: inset(60% 0 10% 0);
+                transform: translate(4px, -2px);
+            }
+
+            40% {
+                clip-path: inset(40% 0 50% 0);
+                transform: translate(-4px, 4px);
+            }
+
+            60% {
+                clip-path: inset(80% 0 5% 0);
+                transform: translate(4px, -4px);
+            }
+
+            80% {
+                clip-path: inset(10% 0 70% 0);
+                transform: translate(-2px, 2px);
+            }
+
+            100% {
+                clip-path: inset(30% 0 50% 0);
+                transform: translate(2px, -2px);
+            }
+        }
+
+        @keyframes glitch-anim-2 {
+            0% {
+                clip-path: inset(10% 0 60% 0);
+                transform: translate(4px, -2px);
+            }
+
+            20% {
+                clip-path: inset(80% 0 5% 0);
+                transform: translate(-4px, 4px);
+            }
+
+            40% {
+                clip-path: inset(30% 0 20% 0);
+                transform: translate(4px, 2px);
+            }
+
+            60% {
+                clip-path: inset(10% 0 80% 0);
+                transform: translate(-2px, -4px);
+            }
+
+            80% {
+                clip-path: inset(50% 0 30% 0);
+                transform: translate(2px, 4px);
+            }
+
+            100% {
+                clip-path: inset(20% 0 60% 0);
+                transform: translate(-4px, 2px);
+            }
+        }
+
+        @keyframes glitch-flash {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.3;
+                background-color: #00FF41;
+            }
+        }
+
+        /* Enhanced Screen Shake for HIRE Protocol */
+        @keyframes screen-shake {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-5px, 2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(5px, -2px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(-3px, 4px) rotate(-0.5deg);
+            }
+
+            40% {
+                transform: translate(3px, -4px) rotate(0.5deg);
+            }
+
+            50% {
+                transform: translate(-6px, 1px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(6px, -1px) rotate(1deg);
+            }
+
+            70% {
+                transform: translate(-2px, 3px) rotate(-0.5deg);
+            }
+
+            80% {
+                transform: translate(2px, -3px) rotate(0.5deg);
+            }
+
+            90% {
+                transform: translate(-4px, 2px) rotate(-1deg);
+            }
+        }
+
+        @keyframes rgb-split {
+            0% {
+                text-shadow: 0 0 0 red, 0 0 0 cyan;
+            }
+
+            25% {
+                text-shadow: -2px 0 0 red, 2px 0 0 cyan;
+            }
+
+            50% {
+                text-shadow: 2px 0 0 red, -2px 0 0 cyan;
+            }
+
+            75% {
+                text-shadow: -2px 0 0 red, 2px 0 0 cyan;
+            }
+
+            100% {
+                text-shadow: 0 0 0 red, 0 0 0 cyan;
+            }
+        }
+
+        @keyframes scan-line {
+            0% {
+                top: 0%;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
+
+        /* Glitch Active State */
+        .glitch-active {
+            animation: screen-shake 0.6s ease-in-out;
+        }
+
+        .glitch-active::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(0deg,
+                    rgba(0, 255, 65, 0.03),
+                    rgba(0, 255, 65, 0.03) 1px,
+                    transparent 1px,
+                    transparent 2px);
+            z-index: 9999;
+            pointer-events: none;
+            animation: glitch-flash 0.1s infinite;
+        }
+
+        .glitch-active::after {
+            content: "";
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(0, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+            z-index: 10000;
+            pointer-events: none;
+            animation: scan-line 0.6s ease-in-out;
+        }
+
+        /* RGB Split Text Effect */
+        .text-glitch {
+            animation: rgb-split 0.2s infinite;
+        }
+    </style>
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aditya Gupta",
+        "url": "https://adityagupta.dev",
+        "image": "https://adityagupta.dev/preview.png",
+        "sameAs": [
+            "https://github.com/AdityaTheHustler",
+            "https://www.linkedin.com/in/adityathehustler/",
+            "https://napster-in.vercel.app/"
+        ],
+        "jobTitle": "Full Stack Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Your University Name"
+        },
+        "knowsAbout": [
+            "Full Stack Development",
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Python",
+            "JavaScript",
+            "React",
+            "System Architecture"
+        ],
+        "description": "Full Stack Developer specializing in AI/ML, React, Python, and interactive web experiences with gamified user interfaces."
+    }
+    </script>
+
+</head>
+
+<body
+    class="bg-retro-bg text-matrix font-mono antialiased min-h-screen relative overflow-x-hidden selection:bg-matrix selection:text-black">
+    <div class="fixed inset-0 z-50 pointer-events-none scanline-overlay opacity-30"></div>
+    <div class="fixed inset-0 z-50 pointer-events-none shadow-crt"></div>
+    <div class="fixed inset-0 z-0 bg-grid-retro bg-[length:30px_30px] opacity-20 pointer-events-none"></div>
+    <div
+        class="relative z-10 w-full max-w-md mx-auto min-h-screen flex flex-col border-x border-matrix-dark shadow-[0_0_50px_rgba(0,255,65,0.1)]">
+        <nav
+            class="sticky top-0 z-40 bg-retro-bg/95 backdrop-blur-md border-b border-matrix shadow-[0_0_15px_rgba(0,255,65,0.25)]">
+            <div
+                class="bg-matrix-dark/40 border-b border-matrix/20 text-[10px] px-3 py-1 font-mono flex justify-between items-center text-matrix-dim">
+                <span class="tracking-widest font-bold">USER: ADITYA</span>
+                <span class="flex items-center gap-2 font-bold">
+                    SYSTEM STATUS: <span class="text-matrix animate-pulse">ACTIVE</span>
+                </span>
+            </div>
+            <div class="relative flex items-center pl-3 pr-1 py-2 overflow-hidden">
+                <div class="absolute inset-0 bg-scanlines opacity-20 pointer-events-none"></div>
+                <div class="flex items-center gap-2 mr-3 shrink-0 z-10">
+                    <span class="text-matrix font-bold animate-flicker text-sm">&gt;_</span>
+                </div>
+                <div class="flex-1 flex items-center gap-2 overflow-x-auto no-scrollbar z-10 pr-4">
+                    <a class="shrink-0 font-mono text-[11px] sm:text-xs font-bold text-white hover:text-black hover:bg-matrix px-2 py-1 transition-all border border-transparent hover:border-matrix/50 rounded-sm"
+                        href="#">[HOME]</a>
+                    <a class="shrink-0 font-mono text-[11px] sm:text-xs font-bold text-gray-400 hover:text-black hover:bg-matrix px-2 py-1 transition-all border border-transparent hover:border-matrix/50 rounded-sm"
+                        href="#root">[ROOT]</a>
+                    <a class="shrink-0 font-mono text-[11px] sm:text-xs font-bold text-gray-400 hover:text-black hover:bg-matrix px-2 py-1 transition-all border border-transparent hover:border-matrix/50 rounded-sm"
+                        href="#core">[CORE]</a>
+                    <a class="shrink-0 font-mono text-[11px] sm:text-xs font-bold text-gray-400 hover:text-black hover:bg-matrix px-2 py-1 transition-all border border-transparent hover:border-matrix/50 rounded-sm"
+                        href="#logs">[LOGS]</a>
+                    <a class="shrink-0 font-mono text-[11px] sm:text-xs font-bold text-neon-cyan hover:text-black hover:bg-neon-cyan px-2 py-1 transition-all border border-transparent hover:border-neon-cyan/50 rounded-sm shadow-[0_0_5px_rgba(0,255,255,0.2)]"
+                        href="#ops">[OPS]</a>
+                    <a class="shrink-0 font-mono text-[11px] sm:text-xs font-bold text-gray-400 hover:text-black hover:bg-matrix px-2 py-1 transition-all border border-transparent hover:border-matrix/50 rounded-sm"
+                        href="#link">[LINK]</a>
+                    <a class="shrink-0 font-mono text-[11px] sm:text-xs font-bold text-alert hover:text-black hover:bg-alert px-2 py-1 transition-all border border-transparent hover:border-alert/50 rounded-sm ml-2"
+                        href="https://drive.google.com/file/d/1D76y0Xu_cAPj7N0l3q7KcOaUrLNwy28R/view?usp=sharing"
+                        target="_blank">[RESUME_DL]</a>
+                </div>
+                <div
+                    class="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-retro-bg to-transparent pointer-events-none z-20">
+                </div>
+            </div>
+        </nav>
+        <section class="relative px-6 pt-12 pb-12 overflow-hidden border-b border-matrix-dim" id="home">
+            <div
+                class="absolute top-10 right-4 text-[10px] text-matrix-dim opacity-50 whitespace-pre leading-none pointer-events-none">
+                __
+                _/o \_
+                ( \_ )
+                / / \ \
+                \_) (_/
+            </div>
+            <div class="flex flex-col gap-4">
+                <div class="inline-block border border-matrix px-2 py-1 text-xs text-matrix w-fit shadow-neon">
+                    &gt; TARGET: AUTOMATION
+                </div>
+                <h1 class="text-4xl font-bold leading-tight mt-2">
+                    Building <br />
+                    <span class="text-neon-cyan text-glow-cyan">Digital Brains</span>
+                </h1>
+                <div class="p-4 border-l-2 border-neon-cyan bg-neon-cyan/5 my-2">
+                    <p class="text-lg text-white">
+                        &gt; Initialize: Jarvis UI<br />
+                        &gt; Status: Active<br />
+                        <span class="text-matrix-dim text-sm">// Architecting autonomous efficiency systems.</span>
+                    </p>
+                </div>
+                <button onclick="triggerHireProtocol()"
+                    class="group mt-4 relative bg-black border border-matrix hover:bg-matrix hover:text-black transition-all duration-200 px-6 py-4 w-full shadow-neon overflow-hidden">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold tracking-widest text-sm animate-pulse">&gt;&gt;&gt; EXECUTE_PROTOCOL:
+                            HIRE</span>
+                    </div>
+                </button>
+            </div>
+        </section>
+        <section class="px-6 py-10 border-b border-matrix-dim relative" id="root">
+            <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-2">
+                <span class="text-neon-cyan">01</span> // ROOT_ACCESS (Field XP)
+            </h2>
+            <div class="font-mono text-sm relative">
+                <div class="border border-matrix p-4 mb-8 relative bg-surface-term shadow-neon">
+                    <div
+                        class="absolute -top-3 left-4 bg-retro-bg px-2 text-neon-cyan font-bold text-xs border border-neon-cyan">
+                        ROOT COMP</div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold text-white">CYMAKE</h3>
+                        <span class="text-xs text-matrix-dim bg-matrix/10 px-1">JUL'25-DEC'25</span>
+                    </div>
+                    <p class="text-xs text-matrix-dim uppercase tracking-wider">Parent Company</p>
+                    <div class="absolute left-8 bottom-[-32px] w-0.5 h-8 bg-matrix"></div>
+                </div>
+                <div class="ml-8 border-l-2 border-matrix border-dashed pl-8 space-y-6 pb-2">
+                    <div class="relative group">
+                        <div class="absolute -left-[34px] top-3 w-8 h-0.5 bg-matrix"></div>
+                        <div class="absolute -left-[38px] top-[9px] w-2 h-2 bg-neon-cyan"></div>
+                        <div
+                            class="bg-surface-term border border-matrix-dim p-3 hover:border-matrix hover:shadow-neon transition-all">
+                            <h4 class="text-white font-bold text-base">CloserX.ai</h4>
+                            <div class="mt-2 space-y-1 text-xs text-gray-400">
+                                <p>&gt; Python Microservices</p>
+                                <p>&gt; GHL Workflow Opt.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="absolute -left-[34px] top-3 w-8 h-0.5 bg-matrix"></div>
+                        <div class="absolute -left-[38px] top-[9px] w-2 h-2 bg-matrix"></div>
+                        <div
+                            class="bg-surface-term border border-matrix-dim p-3 hover:border-matrix hover:shadow-neon transition-all">
+                            <h4 class="text-white font-bold text-base">Ravan.ai</h4>
+                            <p class="text-xs text-matrix-dim mt-1">AI Integration Specialist</p>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="absolute -left-[34px] top-3 w-8 h-0.5 bg-matrix"></div>
+                        <div class="absolute -left-[38px] top-[9px] w-2 h-2 bg-matrix"></div>
+                        <div
+                            class="bg-surface-term border border-matrix-dim p-3 hover:border-matrix hover:shadow-neon transition-all">
+                            <h4 class="text-white font-bold text-base">Snowie.ai</h4>
+                            <p class="text-xs text-matrix-dim mt-1">Backend Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 py-10 border-b border-matrix-dim bg-retro-bg" id="core">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <span class="text-neon-cyan">02</span> // SYSTEM_CORE
+            </h2>
+            <div class="grid grid-cols-1 gap-6">
+                <div class="border border-matrix/30 bg-surface-term relative">
+                    <div
+                        class="absolute -top-3 left-4 bg-retro-bg px-2 text-matrix font-bold text-xs border border-matrix/50">
+                        :: ACTIVE_MODULES</div>
+                    <div class="p-4 pt-6 space-y-4">
+                        <div class="group">
+                            <h3 class="text-neon-cyan font-bold text-sm flex items-center gap-2 mb-1">
+                                <span class="material-symbols-outlined text-sm">code</span> FREELANCE WEB DEV
+                            </h3>
+                            <p class="text-xs text-gray-400 pl-6 border-l border-matrix-dim/30">Deployed scalable web
+                                solutions. Stack: React, Tailwind, Node.js. Client satisfaction: 100%.</p>
+                        </div>
+                        <div class="group">
+                            <h3 class="text-white font-bold text-sm flex items-center gap-2 mb-1">
+                                <span class="material-symbols-outlined text-sm">terminal</span> OOP &amp; PROBLEM
+                                SOLVING
+                            </h3>
+                            <p class="text-xs text-gray-400 pl-6 border-l border-matrix-dim/30">Deep expertise in Java,
+                                Python, C++. Strong algorithmic foundation &amp; logic building.</p>
+                        </div>
+                        <div class="group">
+                            <h3 class="text-white font-bold text-sm flex items-center gap-2 mb-1">
+                                <span class="material-symbols-outlined text-sm">dns</span> DATABASE &amp; NETWORKING
+                            </h3>
+                            <p class="text-xs text-gray-400 pl-6 border-l border-matrix-dim/30">SQL proficiency,
+                                Database normalization, TCP/IP protocols &amp; system architecture.</p>
+                        </div>
+                        <div class="group">
+                            <h3 class="text-white font-bold text-sm flex items-center gap-2 mb-1">
+                                <span class="material-symbols-outlined text-sm">psychology</span> PROMPT ENGINEERING
+                            </h3>
+                            <p class="text-xs text-gray-400 pl-6 border-l border-matrix-dim/30">Advanced LLM prompting
+                                (ChatGPT), Workflow automation via n8n.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-neon-cyan/30 bg-surface-term relative">
+                    <div
+                        class="absolute -top-3 left-4 bg-retro-bg px-2 text-neon-cyan font-bold text-xs border border-neon-cyan/50">
+                        :: INSTALLED_PACKAGES</div>
+                    <div class="p-4 pt-6">
+                        <div class="grid grid-cols-2 gap-x-2 gap-y-3 font-mono text-xs">
+                            <div class="flex items-center justify-between border-b border-matrix-dark pb-1">
+                                <span class="text-gray-400">lang/python</span>
+                                <span class="text-matrix">[v3.11]</span>
+                            </div>
+                            <div class="flex items-center justify-between border-b border-matrix-dark pb-1">
+                                <span class="text-gray-400">lang/java</span>
+                                <span class="text-matrix">[JDK 21]</span>
+                            </div>
+                            <div class="flex items-center justify-between border-b border-matrix-dark pb-1">
+                                <span class="text-gray-400">lib/react</span>
+                                <span class="text-neon-cyan">[LATEST]</span>
+                            </div>
+                            <div class="flex items-center justify-between border-b border-matrix-dark pb-1">
+                                <span class="text-gray-400">tool/n8n</span>
+                                <span class="text-neon-cyan">[AUTO]</span>
+                            </div>
+                            <div class="flex items-center justify-between border-b border-matrix-dark pb-1">
+                                <span class="text-gray-400">db/sql</span>
+                                <span class="text-matrix">[READY]</span>
+                            </div>
+                            <div class="flex items-center justify-between border-b border-matrix-dark pb-1">
+                                <span class="text-gray-400">tool/git</span>
+                                <span class="text-matrix">[VERIFIED]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 py-10 border-b border-matrix-dim" id="logs">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <span class="text-neon-cyan">03</span> // EDUCATION_LOGS
+            </h2>
+            <div class="relative pl-4 border-l border-matrix-dim space-y-6">
+                <div class="relative">
+                    <div
+                        class="absolute -left-[21px] top-1 w-3 h-3 bg-neon-cyan rounded-full border border-black shadow-[0_0_10px_#00FFFF]">
+                    </div>
+                    <h3 class="text-white font-bold">B.TECH (IT)</h3>
+                    <p class="text-xs text-matrix">GITM | 2021-2025</p>
+                    <div class="mt-2 bg-matrix/10 p-2 border border-matrix/20 text-xs text-white font-mono">
+                        &gt; SGPA: 8.0+<br />
+                        &gt; STATUS: COMPLETED
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[21px] top-1 w-3 h-3 bg-matrix-dim rounded-full border border-black">
+                    </div>
+                    <h3 class="text-white font-bold text-sm opacity-80">SENIOR SECONDARY (12TH)</h3>
+                    <p class="text-xs text-gray-500">Score: 75%+</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[21px] top-1 w-3 h-3 bg-matrix-dim rounded-full border border-black">
+                    </div>
+                    <h3 class="text-white font-bold text-sm opacity-80">SECONDARY (10TH)</h3>
+                    <p class="text-xs text-gray-500">Score: 75%+</p>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 py-10 border-b border-matrix-dim bg-retro-bg">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <span class="text-neon-cyan">04</span> // CREDENTIALS
+            </h2>
+            <div class="grid grid-cols-1 gap-3">
+                <div
+                    class="flex items-center justify-between border border-matrix/50 p-3 bg-surface-term hover:bg-matrix/10 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-neon-cyan">verified</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">PYTHON FUNDAMENTALS</h4>
+                            <p class="text-[10px] text-gray-400">CERTIFIED DEVELOPER</p>
+                        </div>
+                    </div>
+                    <span class="text-matrix text-xs font-bold"><a
+                            href="https://drive.google.com/file/d/179wJ1PpBkLxahWcnN67ZbxUHN0ttg6LK/view?usp=drive_link"
+                            target="_blank">[VALID]</a></span>
+                </div>
+                <div
+                    class="flex items-center justify-between border border-matrix/50 p-3 bg-surface-term hover:bg-matrix/10 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-neon-cyan">verified</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">DSA WITH JAVA</h4>
+                            <p class="text-[10px] text-gray-400">ALGORITHMIC MASTERY</p>
+                        </div>
+                    </div>
+                    <span class="text-matrix text-xs font-bold"><a
+                            href="https://drive.google.com/file/d/1FP2Xm5WgGXqEwWaijg5J1btX8OVZ_Avc/view?usp=drive_link"
+                            target="_blank">[VALID]</a></span>
+                </div>
+                <div
+                    class="flex items-center justify-between border border-matrix/50 p-3 bg-surface-term hover:bg-matrix/10 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-neon-cyan">verified</span>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">DATA ANALYTICS</h4>
+                            <p class="text-[10px] text-gray-400">INSIGHT GENERATION</p>
+                        </div>
+                    </div>
+                    <span class="text-matrix text-xs font-bold"><a
+                            href="https://drive.google.com/file/d/1xeCGbNys5OXfEBV1S3vGQQEorho3bzHC/view?usp=drive_link"
+                            target="_blank">[VALID]</a></span>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 py-10 border-b border-matrix-dim" id="ops">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <span class="text-neon-cyan">05</span> // DEPLOYED_OPS
+            </h2>
+            <div class="space-y-8">
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-matrix to-neon-cyan opacity-25 blur transition duration-200 group-hover:opacity-75">
+                    </div>
+                    <div class="relative bg-black border border-matrix p-4">
+                        <div
+                            class="h-32 w-full mb-4 overflow-hidden border-b border-matrix-dim relative bg-[#0a0a0a] font-mono text-[10px] p-2 flex flex-col justify-end">
+                            <div
+                                class="absolute top-2 right-2 bg-black border border-matrix px-2 py-0.5 text-xs text-matrix animate-pulse">
+                                4TH YEAR</div>
+                            <div class="text-matrix-dim opacity-70">
+                                &gt; loading_modules...<br />
+                                &gt; vision_core [OK]<br />
+                                &gt; speech_synth [OK]<br />
+                            </div>
+                            <div class="text-neon-cyan mt-1 flex items-center">
+                                &gt; <span class="animate-pulse ml-1">_AWAITING_INPUT</span>
+                            </div>
+                            <div class="absolute inset-0 bg-scanlines opacity-50 pointer-events-none"></div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-1">JARVIS DESKTOP ASST</h3>
+                        <p class="text-xs text-matrix-dim mb-3">Flagship | Vision Mode | Auto-Workflows</p>
+                        <div class="bg-surface-term p-2 mb-3 border border-matrix/20">
+                            <p class="text-[10px] text-gray-300 leading-tight">
+                                &gt; Status: Advanced vision capabilities enabled.<br />
+                                &gt; Ops: Screen analysis, file automation, voice command execution.
+                            </p>
+                        </div>
+                        <div class="flex gap-2">
+                            <button
+                                class="bg-matrix text-black text-xs font-bold px-3 py-1.5 hover:bg-white transition-colors uppercase flex items-center gap-1">
+                                <span class="material-symbols-outlined text-[14px]">terminal</span> <a
+                                    href="https://github.com/AdityaTheHustler/JARVIS-Desktop-Assistant"
+                                    target="_blank">View Source</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-neon-cyan to-purple-600 opacity-25 blur transition duration-200 group-hover:opacity-75">
+                    </div>
+                    <div class="relative bg-black border border-neon-cyan p-4">
+                        <div
+                            class="h-32 w-full mb-4 overflow-hidden border-b border-neon-cyan/50 relative flex items-center justify-center bg-black">
+                            <div
+                                class="absolute top-2 right-2 bg-black border border-neon-cyan px-2 py-0.5 text-xs text-neon-cyan">
+                                3RD YEAR</div>
+                            <div class="flex items-end justify-center gap-1 h-12 w-full px-8 opacity-80">
+                                <div class="w-2 bg-neon-cyan h-4 animate-bar-dance" style="animation-delay: 0.1s"></div>
+                                <div class="w-2 bg-neon-cyan h-8 animate-bar-dance" style="animation-delay: 0.2s"></div>
+                                <div class="w-2 bg-neon-cyan h-6 animate-bar-dance" style="animation-delay: 0.3s"></div>
+                                <div class="w-2 bg-neon-cyan h-10 animate-bar-dance" style="animation-delay: 0.1s">
+                                </div>
+                                <div class="w-2 bg-neon-cyan h-5 animate-bar-dance" style="animation-delay: 0.4s"></div>
+                                <div class="w-2 bg-neon-cyan h-9 animate-bar-dance" style="animation-delay: 0.2s"></div>
+                                <div class="w-2 bg-neon-cyan h-3 animate-bar-dance" style="animation-delay: 0.5s"></div>
+                            </div>
+                            <div class="absolute inset-0 bg-scanlines opacity-30 pointer-events-none"></div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-1">NAPSTER.IN</h3>
+                        <p class="text-xs text-gray-400 mb-3">Music WebApp | Streaming | High-Fidelity</p>
+                        <div class="flex gap-2">
+                            <button
+                                class="bg-neon-cyan text-black text-xs font-bold px-3 py-1.5 hover:bg-white transition-colors uppercase flex items-center gap-1">
+                                <span class="material-symbols-outlined text-[14px]">play_circle</span> <a
+                                    href="https://napster-in.vercel.app/" target="_blank">Launch App</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-r from-white to-gray-500 opacity-20 blur transition duration-200 group-hover:opacity-50">
+                    </div>
+                    <div class="relative bg-black border border-white/30 p-4">
+                        <div class="h-32 w-full mb-4 overflow-hidden border-b border-white/20 relative">
+                            <div
+                                class="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuBC0k_HokrosfYcJQ90NNmhAHCtXZgTSeeHMJTK744yLuSxHx4UtxqxBZdTtubKCU_EvYy0JeFvgWPAvAdq0P4ETPEZYLy0kmCbNava393HwmtyW4OVInWP9Rnt3zfz93GuG_0wE9_YWszkjdvsH6Peni2DTxVuusQGA8ltQBpgIfwg2INGxPTR_ZGvjRN81-cJYq3Ftjp20BMUk8G5jeDNBrfujTtsd8Lg3kfGnRBC4vrSJc6Fe2e9TOKYj2k5VxSJ8s63WfBACq8')] bg-cover bg-center grayscale contrast-125 opacity-50 group-hover:opacity-80 transition-opacity">
+                            </div>
+                            <div
+                                class="absolute top-2 right-2 bg-black border border-white/50 px-2 py-0.5 text-xs text-white">
+                                2ND YEAR</div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-1">DIGITAL SERVICES</h3>
+                        <p class="text-xs text-gray-400 mb-3">Service Platform | Client Interface</p>
+                        <div class="grid grid-cols-2 gap-2 mb-3">
+                            <div
+                                class="flex items-center gap-1 text-[10px] text-gray-300 border border-white/10 p-1 bg-white/5">
+                                <span class="material-symbols-outlined text-[10px] text-white">movie</span> Video
+                                Editing
+                            </div>
+                            <div
+                                class="flex items-center gap-1 text-[10px] text-gray-300 border border-white/10 p-1 bg-white/5">
+                                <span class="material-symbols-outlined text-[10px] text-white">code</span> Web Dev
+                            </div>
+                            <div
+                                class="flex items-center gap-1 text-[10px] text-gray-300 border border-white/10 p-1 bg-white/5">
+                                <span class="material-symbols-outlined text-[10px] text-white">design_services</span>
+                                Logo Design
+                            </div>
+                            <div
+                                class="flex items-center gap-1 text-[10px] text-gray-300 border border-white/10 p-1 bg-white/5">
+                                <span class="material-symbols-outlined text-[10px] text-white">article</span> Content
+                                Creation
+                            </div>
+                        </div>
+                        <div class="flex gap-2">
+                            <button
+                                class="bg-white/10 border border-white/50 text-white text-xs font-bold px-3 py-1.5 hover:bg-white hover:text-black transition-colors uppercase flex items-center gap-1">
+                                <span class="material-symbols-outlined text-[14px]">public</span> <a
+                                    href="https://github.com/AdityaTheHustler/Exclusive-Services"
+                                    target="_blank">Access</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 py-10 border-b border-matrix-dim bg-retro-bg" id="terminal">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <span class="text-neon-cyan">06</span> // INTERACTIVE_TERMINAL
+            </h2>
+            <div class="border border-matrix bg-black p-4 font-mono text-sm h-96 overflow-y-auto shadow-neon rounded-sm"
+                id="terminal-window" onclick="document.getElementById('cmd-input').focus()">
+                <div class="mb-4 text-matrix-dim">
+                    <p>Welcome to AdityaOS v2.5.0 (tty1)</p>
+                    <p>System start: <span id="terminal-start-time"></span></p>
+                    <p>Type 'help' to see available commands.</p>
+                </div>
+                <div id="game-area" class="hidden mb-4 border-b border-matrix/50 pb-4">
+                    <canvas id="game-canvas" width="600" height="300"
+                        class="border border-matrix w-full bg-black/90"></canvas>
+                    <div class="flex justify-between text-xs text-matrix mt-1">
+                        <span id="game-controls-hint">CONTROLS: ARROW KEYS</span>
+                        <span id="game-score">SCORE: 0</span>
+                    </div>
+                    <!-- Virtual Controls for Touch/Mouse -->
+                    <div id="virtual-controls" class="flex justify-center gap-4 mt-4 select-none">
+                        <div class="grid grid-cols-3 gap-1">
+                            <div></div>
+                            <button onmousedown="handleGameInput('UP')" ontouchstart="handleGameInput('UP')"
+                                class="w-10 h-10 border border-matrix text-matrix hover:bg-matrix hover:text-black flex items-center justify-center">▲</button>
+                            <div></div>
+                            <button onmousedown="handleGameInput('LEFT')" ontouchstart="handleGameInput('LEFT')"
+                                class="w-10 h-10 border border-matrix text-matrix hover:bg-matrix hover:text-black flex items-center justify-center">◀</button>
+                            <button onmousedown="handleGameInput('DOWN')" ontouchstart="handleGameInput('DOWN')"
+                                class="w-10 h-10 border border-matrix text-matrix hover:bg-matrix hover:text-black flex items-center justify-center">▼</button>
+                            <button onmousedown="handleGameInput('RIGHT')" ontouchstart="handleGameInput('RIGHT')"
+                                class="w-10 h-10 border border-matrix text-matrix hover:bg-matrix hover:text-black flex items-center justify-center">▶</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="terminal-output"></div>
+                <div class="flex items-center gap-2 text-matrix font-bold" id="input-line">
+                    <span class="text-neon-cyan">visitor@aditya:~$</span>
+                    <input type="text" id="cmd-input"
+                        class="bg-transparent border-none outline-none text-white flex-1 caret-matrix font-mono"
+                        autocomplete="off" spellcheck="false">
+                </div>
+            </div>
+        </section>
+        <footer class="px-6 py-12 bg-black border-t border-matrix relative overflow-hidden" id="link">
+            <div class="absolute bottom-4 right-4 opacity-20 pointer-events-none hidden sm:block">
+                <div class="border border-matrix w-24 h-24 grid grid-cols-6 grid-rows-6 gap-0.5 p-0.5">
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-matrix"></div>
+                    <div class="bg-matrix"></div>
+                    <div class="bg-matrix"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-matrix"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-matrix"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-alert animate-pulse"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                    <div class="bg-transparent"></div>
+                </div>
+                <div class="text-[8px] text-center mt-1 text-matrix">SCORE: 0450</div>
+            </div>
+            <h2 class="text-2xl font-bold text-white mb-8 border-b border-white/10 pb-4">
+                <span class="animate-pulse">_</span>ESTABLISH_UPLINK
+            </h2>
+            <div class="flex flex-col gap-4 mb-10">
+                <a class="group flex items-center gap-4 p-4 border border-matrix/50 hover:bg-matrix hover:text-black transition-all"
+                    href="mailto:adityawithit@gmail.com">
+                    <span class="material-symbols-outlined group-hover:animate-bounce">mail</span>
+                    <span class="font-bold text-sm sm:text-base">adityawithit@gmail.com</span>
+                </a>
+                <a class="group flex items-center gap-4 p-4 border border-matrix/50 hover:bg-matrix hover:text-black transition-all"
+                    href="tel:+918707504470">
+                    <span class="material-symbols-outlined group-hover:animate-bounce">call</span>
+                    <span class="font-bold">+91 8707504470</span>
+                </a>
+            </div>
+            <div class="mb-8">
+                <h3 class="text-xs text-matrix-dim mb-4 uppercase tracking-widest">--- SOCIAL MAINFRAME ---</h3>
+                <div class="flex flex-wrap gap-3">
+                    <a class="flex items-center border border-matrix-dim bg-surface-term hover:border-yellow-500 hover:text-white transition-colors px-1 py-0.5 gap-2 group"
+                        href="http://leetcode.com/u/adhustler/" target="_blank">
+                        <div
+                            class="bg-yellow-600 text-black text-[10px] font-bold px-1 py-0.5 group-hover:bg-yellow-500">
+                            LC</div>
+                        <span class="text-xs px-1 font-bold">LEETCODE</span>
+                    </a>
+                    <a class="flex items-center border border-matrix-dim bg-surface-term hover:border-green-500 hover:text-white transition-colors px-1 py-0.5 gap-2"
+                        href="https://www.geeksforgeeks.org/profile/adityathehustler?tab=activity" target="_blank">
+                        <div class="bg-green-700 text-white text-[10px] font-bold px-1 py-0.5">GFG</div>
+                        <span class="text-xs px-1 font-bold">GEEKSFORGEEKS</span>
+                    </a>
+                    <a class="flex items-center border border-matrix-dim bg-surface-term hover:border-blue-400 hover:text-white transition-colors px-1 py-0.5 gap-2"
+                        href="https://www.linkedin.com/in/adityathehustler/" target="_blank">
+                        <div class="bg-blue-700 text-white text-[10px] font-bold px-1 py-0.5">IN</div>
+                        <span class="text-xs px-1 font-bold">LINKEDIN</span>
+                    </a>
+                    <a class="flex items-center border border-matrix-dim bg-surface-term hover:border-gray-400 hover:text-white transition-colors px-1 py-0.5 gap-2"
+                        href="https://github.com/AdityaTheHustler" target="_blank">
+                        <div class="bg-gray-700 text-white text-[10px] font-bold px-1 py-0.5">GIT</div>
+                        <span class="text-xs px-1 font-bold">GITHUB</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-2 text-[10px] text-matrix-dim border-t border-matrix/10 pt-6">
+                <p>SESSION.TIME: <span id="session-time" class="text-white">00:00:00</span></p>
+                <p>SYSTEM.VERSION: 2.0.5 (HUSTLER)</p>
+                <p>UPTIME: <span id="system-uptime" class="text-neon-cyan">CALCULATING...</span></p>
+                <p>© 2025 ADITYATHEHUSTLER. ALL PROCESSES RUNNING.</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // System Uptime Counter
+        const startTime = new Date("2021-09-01T09:00:00").getTime();
+        const sessionStartTime = Date.now();
+
+        setInterval(() => {
+            const now = Date.now();
+
+            // Uptime Logic
+            const diff = now - startTime;
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("system-uptime").innerText =
+                `${days}D:${hours.toString().padStart(2, '0')}H:${minutes.toString().padStart(2, '0')}M:${seconds.toString().padStart(2, '0')}S`;
+
+            // Session Time Logic
+            const sessionDiff = now - sessionStartTime;
+            const sHours = Math.floor((sessionDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const sMinutes = Math.floor((sessionDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const sSeconds = Math.floor((sessionDiff % (1000 * 60)) / 1000);
+
+            document.getElementById("session-time").innerText =
+                `${sHours.toString().padStart(2, '0')}:${sMinutes.toString().padStart(2, '0')}:${sSeconds.toString().padStart(2, '0')}`;
+        }, 1000);
+
+        // Terminal Logic
+        const terminalOutput = document.getElementById('terminal-output');
+        const cmdInput = document.getElementById('cmd-input');
+        const terminalStartTime = document.getElementById('terminal-start-time');
+
+        if (terminalStartTime) {
+            terminalStartTime.innerText = new Date().toLocaleString();
+        }
+
+        const commands = {
+            help: {
+                desc: "List available commands",
+                action: () => {
+                    return `
+    <span class="text-neon-cyan">Available commands:</span>
+    - <span class="text-white">about</span>:    Display user profile
+    - <span class="text-white">skills</span>:   List technical capabilities
+    - <span class="text-white">projects</span>: Show deployed operations
+    - <span class="text-white">social</span>:   Connect via social mainframe
+    - <span class="text-white">clear</span>:    Clear terminal screen
+    - <span class="text-white">whoami</span>:   Current user status
+                    `;
+                }
+            },
+            about: {
+                desc: "User Profile",
+                action: () => `<span class="text-white">Aditya Gupta</span>\nFull Stack Developer & AI Specialist.\nPassionate about building autonomous systems and digital experiences.`
+            },
+            whoami: {
+                desc: "User Status",
+                action: () => `<span class="text-alert">User: VISITOR</span>\nAccess Level: <span class="text-neon-cyan">GUEST</span>\nLocation: WORLDWIDE_WEB`
+            },
+            skills: {
+                desc: "Technical Capabilities",
+                action: () => `
+    <span class="text-neon-cyan">>>> CORE_MODULES:</span>
+    [Python] [Java] [C++] [JavaScript]
+    
+    <span class="text-neon-cyan">>>> FRAMEWORKS:</span>
+    [React] [Tailwind] [Node.js] [Django]
+    
+    <span class="text-neon-cyan">>>> SPECIALTIES:</span>
+    [AI/ML] [Automation] [System Architecture]
+                `
+            },
+            projects: {
+                desc: "Deployed Ops",
+                action: () => `
+    1. <a href="https://github.com/AdityaTheHustler/JARVIS-Desktop-Assistant" target="_blank" class="text-neon-cyan hover:underline">JARVIS_DESKTOP</a> - AI Assistant
+    2. <a href="https://napster-in.vercel.app/" target="_blank" class="text-neon-cyan hover:underline">NAPSTER.IN</a>      - Music Streaming
+    3. <a href="https://github.com/AdityaTheHustler/Exclusive-Services" target="_blank" class="text-neon-cyan hover:underline">DIGITAL_SVCS</a>    - Service Platform
+                `
+            },
+            social: {
+                desc: "Connect",
+                action: () => `
+    <span class="text-white">LinkedIn:</span>  <a href="https://www.linkedin.com/in/adityathehustler/" target="_blank" class="text-matrix hover:underline">@adityathehustler</a>
+    <span class="text-white">GitHub:</span>    <a href="https://github.com/AdityaTheHustler" target="_blank" class="text-matrix hover:underline">@AdityaTheHustler</a>
+    <span class="text-white">Email:</span>     <a href="mailto:adityawithit@gmail.com" class="text-matrix hover:underline">adityawithit@gmail.com</a>
+                `
+            },
+            '1': {
+                desc: "Play Snake",
+                action: () => { startGame('snake'); return "Starting Snake Xenzia..."; }
+            },
+            '2': {
+                desc: "Play Pong",
+                action: () => { startGame('pong'); return "Starting Cyber Pong..."; }
+            },
+            snake: {
+                desc: "Play Snake",
+                action: () => { startGame('snake'); return "Starting Snake Xenzia..."; }
+            },
+            pong: {
+                desc: "Play Pong",
+                action: () => { startGame('pong'); return "Starting Cyber Pong..."; }
+            }
+        };
+
+        if (cmdInput) {
+            cmdInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    const cmd = cmdInput.value.trim().toLowerCase();
+
+                    if (cmd === 'clear') {
+                        terminalOutput.innerHTML = '';
+                        cmdInput.value = '';
+                        return;
+                    }
+
+                    let response = `<span class="text-alert">Command not found: ${cmd}. Type 'help' for assistance.</span>`;
+
+                    if (commands[cmd]) {
+                        response = commands[cmd].action();
+                    } else if (cmd === '') {
+                        response = '';
+                    }
+
+                    // Append command history
+                    const historyDiv = document.createElement('div');
+                    historyDiv.className = 'mb-2';
+                    historyDiv.innerHTML = `
+                        <div class="flex items-center gap-2 text-matrix-dim">
+                            <span class="text-neon-cyan">visitor@aditya:~$</span>
+                            <span>${cmdInput.value}</span>
+                        </div>
+                        <div class="text-matrix pl-4 whitespace-pre-wrap">${response}</div>
+                    `;
+
+                    terminalOutput.appendChild(historyDiv);
+                    cmdInput.value = '';
+
+                    // Auto scroll
+                    const terminalWindow = document.getElementById('terminal-window');
+                    terminalWindow.scrollTop = terminalWindow.scrollHeight;
+                }
+            });
+        }
+        // Game Engine
+        const canvas = document.getElementById('game-canvas');
+        const ctx = canvas.getContext('2d');
+        const gameArea = document.getElementById('game-area');
+        const gameScoreEl = document.getElementById('game-score');
+        let gameInterval;
+        let gameActive = false;
+        let gamePaused = false;
+        let currentGameMode = null; // 'snake' or 'pong'
+
+        let direction = ''; // Global direction for snake
+
+        // Pause/Resume Control
+        function togglePause() {
+            if (!gameActive) return;
+            gamePaused = !gamePaused;
+            const btn = document.getElementById('pause-btn');
+            if (btn) btn.innerText = gamePaused ? "RESUME" : "PAUSE";
+        }
+
+        // Enhanced Glitch Controller for HIRE Protocol
+        function triggerHireProtocol() {
+            // Stage 1: Trigger Glitch Effect
+            document.documentElement.classList.add('glitch-active');
+
+            // Add RGB split to text
+            const allText = document.querySelectorAll('h1, h2, h3, .text-matrix');
+            allText.forEach(el => el.classList.add('text-glitch'));
+
+            // Stage 2: Remove glitch after animation
+            setTimeout(() => {
+                document.documentElement.classList.remove('glitch-active');
+                allText.forEach(el => el.classList.remove('text-glitch'));
+
+                // Stage 3: Slower, smoother scroll to terminal
+                const terminal = document.getElementById('terminal');
+                terminal.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+
+            }, 800); // Glitch duration
+
+            // Stage 4: Start Protocol after scroll
+            setTimeout(() => {
+                const terminalOutput = document.getElementById('terminal-output');
+                terminalOutput.innerHTML = '';
+
+                typeToTerminal(">>> INITIATING PRE-EMPLOYMENT SKILL ASSESSMENT...", () => {
+                    typeToTerminal(">>> SELECT CHALLENGE MODULE:", () => {
+                        addToTerminal(`
+                            <div class="flex flex-wrap gap-4 mt-4">
+                                <button onclick="selectGame('snake')" class="border border-neon-cyan px-4 py-2 text-neon-cyan hover:bg-neon-cyan hover:text-black transition-all font-bold tracking-wider">
+                                    [1] SNAKE_XENZIA
+                                </button>
+                                <button onclick="selectGame('pong')" class="border border-neon-cyan px-4 py-2 text-neon-cyan hover:bg-neon-cyan hover:text-black transition-all font-bold tracking-wider">
+                                    [2] CYBER_PONG
+                                </button>
+                            </div>
+                        `);
+                    });
+                });
+            }, 1400); // Wait for glitch + scroll
+        }
+
+        function selectGame(type) {
+            const terminalOutput = document.getElementById('terminal-output');
+            terminalOutput.innerHTML = '';
+
+            const gameTitle = type === 'snake' ? 'SNAKE XENZIA' : 'CYBER PONG';
+
+            typeToTerminal(`>>> LOADED: ${gameTitle} MODULE`, () => {
+                addToTerminal(`
+                    <div class="mt-6 p-4 border border-matrix bg-matrix/5 text-center">
+                        <p class="text-white mb-4 animate-pulse">>>> READY TO DEPLOY?</p>
+                        <button onclick="startGame('${type}')" class="bg-neon-cyan text-black font-bold text-lg px-8 py-3 hover:bg-white hover:shadow-[0_0_15px_rgba(0,255,255,0.8)] transition-all transform hover:scale-105">
+                            >>> START GAME <<<
+                        </button>
+                    </div>
+                `);
+            });
+        }
+
+        function handleGameInput(key) {
+            if (!gameActive) return;
+            if (currentGameMode === 'snake') {
+                const snakeEvent = { keyCode: 0, preventDefault: () => { } };
+                if (key === 'UP') snakeEvent.keyCode = 38;
+                if (key === 'DOWN') snakeEvent.keyCode = 40;
+                if (key === 'LEFT') snakeEvent.keyCode = 37;
+                if (key === 'RIGHT') snakeEvent.keyCode = 39;
+                if (changeDirection) changeDirection(snakeEvent);
+            }
+        }
+
+        let changeDirection;
+
+        function typeToTerminal(text, callback) {
+            const div = document.createElement('div');
+            div.className = 'text-matrix mb-1';
+            terminalOutput.appendChild(div);
+
+            let i = 0;
+            const interval = setInterval(() => {
+                div.textContent += text.charAt(i);
+                i++;
+                if (i >= text.length) {
+                    clearInterval(interval);
+                    if (callback) callback();
+                }
+            }, 10); // Faster typing
+        }
+
+        function addToTerminal(html) {
+            const div = document.createElement('div');
+            div.className = 'mb-2';
+            div.innerHTML = html;
+            terminalOutput.appendChild(div);
+            document.getElementById('terminal-window').scrollTop = document.getElementById('terminal-window').scrollHeight;
+        }
+
+        function startGame(type) {
+            try {
+                if (gameActive) clearInterval(gameInterval);
+                gameActive = true;
+                currentGameMode = type;
+
+                // 1. Force Clear Terminal Output
+                const out = document.getElementById('terminal-output');
+                if (out) out.innerHTML = '';
+
+                // 2. Hide Non-Game Elements
+                const intro = document.getElementById('terminal-intro');
+                const inputs = document.getElementById('input-line');
+                if (intro) intro.classList.add('hidden');
+                if (inputs) inputs.classList.add('hidden');
+
+                // 3. Show Game Area
+                const area = document.getElementById('game-area');
+                if (area) area.classList.remove('hidden');
+
+                // Add Pause Button if missing
+                const scoreArea = document.getElementById('game-score').parentElement;
+                if (!document.getElementById('pause-btn')) {
+                    const btn = document.createElement('button');
+                    btn.id = 'pause-btn';
+                    btn.innerText = "PAUSE";
+                    btn.className = "text-xs border border-matrix text-matrix px-2 hover:bg-matrix hover:text-black ml-4";
+                    btn.onclick = togglePause;
+                    scoreArea.appendChild(btn);
+                } else {
+                    document.getElementById('pause-btn').innerText = "PAUSE";
+                }
+
+                gamePaused = false;
+
+                // 4. Reset Canvas
+                const c = document.getElementById('game-canvas');
+                if (c) {
+                    c.style.display = 'block';
+                    const context = c.getContext('2d');
+                    context.fillStyle = '#111';
+                    context.fillRect(0, 0, c.width, c.height);
+                }
+
+                // 5. Start Logic
+                if (type === 'snake') startSnake();
+                else if (type === 'pong') startPong();
+                else throw new Error("Unknown game type: " + type);
+
+                // 6. Scroll
+                if (area) area.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            } catch (e) {
+                console.error(e);
+                gameActive = false;
+                alert("Game Error: " + e.message);
+                document.getElementById('input-line').classList.remove('hidden');
+            }
+        }
+
+        function endGame(won) {
+            gameActive = false;
+            clearInterval(gameInterval);
+
+            setTimeout(() => {
+                const area = document.getElementById('game-area');
+                if (area) area.classList.add('hidden');
+
+                const intro = document.getElementById('terminal-intro');
+                if (intro) intro.classList.remove('hidden');
+
+                const out = document.getElementById('terminal-output');
+                if (out) out.innerHTML = '';
+
+                if (won) {
+                    decryptContact();
+                } else {
+                    addToTerminal(`
+                        <div class="border-l-4 border-red-500 pl-4 py-2 my-2">
+                            <span class="text-alert font-bold text-lg block mb-1">>>> SYSTEM FAILURE</span>
+                            <span class="text-matrix-dim text-sm uppercase">Assessment Failed. Retry?</span>
+                        </div>
+                    `);
+
+                    setTimeout(() => {
+                        addToTerminal(`
+                            <div class="flex gap-4 mt-2">
+                                <button onclick="startGame('${currentGameMode}')" class="text-neon-cyan hover:text-white underline cursor-pointer">
+                                    [ TRY AGAIN ]
+                                </button>
+                                <button onclick="triggerHireProtocol()" class="text-matrix hover:text-white underline cursor-pointer">
+                                    [ MAIN MENU ]
+                                </button>
+                            </div>
+                        `);
+                    }, 100);
+                }
+            }, 200);
+        }
+
+        function decryptContact() {
+            const terminalOutput = document.getElementById('terminal-output');
+
+            // Clear previous if any
+            // terminalOutput.innerHTML = ''; 
+
+            addToTerminal(`<span class="text-neon-cyan">>>> SYSTEM BREACH SUCCESSFUL.</span>`);
+            addToTerminal(`<span class="text-matrix">>>> ELEVATING PRIVILEGES...</span>`);
+
+            setTimeout(() => {
+                addToTerminal(`<span class="text-yellow-400 font-bold">>>> ACCESS GRANTED: [ADMIN_MODE]</span>`);
+
+                const panel = document.createElement('div');
+                panel.className = 'mt-6 p-6 border-2 border-neon-cyan bg-black/90 shadow-[0_0_20px_rgba(0,255,255,0.3)] animate-pulse-slow';
+
+                panel.innerHTML = `
+                    <h2 class="text-xl font-bold text-neon-cyan mb-4 glitch-text" data-text="CLASSIFIED_ARCHIVES">CLASSIFIED_ARCHIVES</h2>
+                    <p class="text-matrix text-xs mb-4">Identity Verified. Welcome ...</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <a href="https://drive.google.com/file/d/1D76y0Xu_cAPj7N0l3q7KcOaUrLNwy28R/view?usp=sharing" target="_blank" class="group flex items-center justify-center gap-2 p-2 border border-matrix hover:bg-matrix hover:text-black transition-all cursor-pointer no-underline">
+                            <span class="text-lg">📂</span>
+                            <span class="font-mono text-xs font-bold group-hover:tracking-wider transition-all">RESUME.EXE</span>
+                        </a>
+                        
+                        <a href="mailto:adityawithit@gmail.com?subject=Interview%20Request%20via%20Protocol%20Override" class="group flex items-center justify-center gap-2 p-2 border border-neon-cyan text-neon-cyan hover:bg-neon-cyan hover:text-black transition-all cursor-pointer no-underline">
+                            <span class="text-lg">📧</span>
+                            <span class="font-mono text-xs font-bold group-hover:tracking-wider transition-all">CONTACT_UPLINK</span>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-4 text-[10px] text-gray-500 font-mono text-center">
+                        <span class="before:content-['>_'] mr-2"></span>SECURE_CONNECTION_ESTABLISHED
+                    </div>
+                `;
+
+                terminalOutput.appendChild(panel);
+                panel.scrollIntoView({ behavior: 'smooth' });
+
+                addToTerminal(`<span class="text-matrix">>>> PROTOCOL COMPLETE.</span>`);
+                document.getElementById('input-line').classList.remove('hidden');
+                document.getElementById('cmd-input').focus();
+
+            }, 1000);
+        }
+
+        // Snake Game
+        function startSnake() {
+            let snake = [{ x: 10, y: 10 }];
+            let food = { x: 15, y: 10 };
+
+            // BONUS FOOD SYSTEM
+            let bonus = { x: -1, y: -1, active: false, timer: 0 };
+
+            let dx = 0;
+            let dy = 0;
+            let score = 0;
+            let speed = 100;
+            const WIN_SCORE = 400; // Updated Win Score
+
+            const gridSize = 20;
+            const tileCount = canvas.width / gridSize;
+            const tileCountY = canvas.height / gridSize;
+
+            gameScoreEl.innerText = `SCORE: ${score} / ${WIN_SCORE}`;
+
+            // Show Controls for Snake
+            const vControls = document.getElementById('virtual-controls');
+            if (vControls) vControls.classList.remove('hidden');
+
+            document.removeEventListener('keydown', changeDirection);
+
+            changeDirection = function (event) {
+                const LEFT_KEY = 37, RIGHT_KEY = 39, UP_KEY = 38, DOWN_KEY = 40;
+                const k = event.keyCode;
+                const goingUp = dy === -1, goingDown = dy === 1;
+                const goingRight = dx === 1, goingLeft = dx === -1;
+
+                if (k === LEFT_KEY && !goingRight) { dx = -1; dy = 0; }
+                if (k === UP_KEY && !goingDown) { dx = 0; dy = -1; }
+                if (k === RIGHT_KEY && !goingLeft) { dx = 1; dy = 0; }
+                if (k === DOWN_KEY && !goingUp) { dx = 0; dy = 1; }
+            };
+
+            document.addEventListener('keydown', changeDirection);
+
+            function runGameLoop() {
+                if (!gameActive) return;
+
+                setTimeout(() => {
+                    requestAnimationFrame(runGameLoop);
+                }, speed);
+
+                if (gamePaused) return;
+
+                // LOGIC
+                const head = { x: snake[0].x + dx, y: snake[0].y + dy };
+
+                // Wrap
+                if (head.x < 0) head.x = tileCount - 1;
+                if (head.x >= tileCount) head.x = 0;
+                if (head.y < 0) head.y = tileCountY - 1;
+                if (head.y >= tileCountY) head.y = 0;
+
+                snake.unshift(head);
+
+                // Win Check
+                if (score >= WIN_SCORE) { endGame(true); return; }
+
+                // Eating Regular Food
+                let ate = false;
+                if (head.x === food.x && head.y === food.y) {
+                    score += 10;
+                    ate = true;
+                    // Speed up
+                    if (speed > 40) speed -= 2;
+
+                    // Spawn regular food
+                    let valid = false;
+                    while (!valid) {
+                        food = { x: Math.floor(Math.random() * tileCount), y: Math.floor(Math.random() * tileCountY) };
+                        valid = !collision(food, snake);
+                    }
+
+                    // Trigger Bonus Chance (20% chance on eat)
+                    if (!bonus.active && Math.random() < 0.2) {
+                        bonus.active = true;
+                        bonus.timer = 50; // ticks
+                        // Spawn Bonus
+                        let bValid = false;
+                        while (!bValid) {
+                            bonus.x = Math.floor(Math.random() * tileCount);
+                            bonus.y = Math.floor(Math.random() * tileCountY);
+                            bValid = !collision(bonus, snake) && (bonus.x !== food.x || bonus.y !== food.y);
+                        }
+                    }
+                }
+
+                // Eating Bonus Food
+                if (bonus.active && head.x === bonus.x && head.y === bonus.y) {
+                    score += 50; // BIG POINTS
+                    bonus.active = false;
+                    ate = true;
+                    // Visual Flair
+                    gameScoreEl.style.color = '#ffff00';
+                    setTimeout(() => gameScoreEl.style.color = '', 500);
+                }
+
+                if (!ate) snake.pop();
+
+                // Bonus Timer logic
+                if (bonus.active) {
+                    bonus.timer--;
+                    if (bonus.timer <= 0) bonus.active = false;
+                }
+
+                if (collision(head, snake)) {
+                    endGame(false);
+                    return;
+                }
+
+                gameScoreEl.innerText = `SCORE: ${score} / ${WIN_SCORE}`;
+
+                // RENDER
+                ctx.fillStyle = '#050505';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                // Grid
+                ctx.strokeStyle = '#0a1a0a';
+                ctx.lineWidth = 0.5;
+                for (let i = 0; i < canvas.width; i += gridSize) { ctx.beginPath(); ctx.moveTo(i, 0); ctx.lineTo(i, canvas.height); ctx.stroke(); }
+                for (let i = 0; i < canvas.height; i += gridSize) { ctx.beginPath(); ctx.moveTo(0, i); ctx.lineTo(canvas.width, i); ctx.stroke(); }
+
+                // Snake
+                ctx.fillStyle = '#00FF41';
+                ctx.shadowBlur = 10; ctx.shadowColor = '#00FF41';
+                snake.forEach(part => ctx.fillRect(part.x * gridSize, part.y * gridSize, gridSize - 2, gridSize - 2));
+
+                // Regular Food (Red)
+                ctx.fillStyle = '#FF3333';
+                ctx.shadowColor = '#FF3333';
+                ctx.fillRect(food.x * gridSize, food.y * gridSize, gridSize - 2, gridSize - 2);
+
+                // Bonus Food (Gold)
+                if (bonus.active) {
+                    ctx.fillStyle = '#FFD700';
+                    ctx.shadowColor = '#FFD700';
+                    ctx.shadowBlur = 20;
+                    // Pulsing effect
+                    const sizeOffset = (bonus.timer % 4) / 2;
+                    ctx.fillRect(bonus.x * gridSize - sizeOffset, bonus.y * gridSize - sizeOffset, gridSize - 2 + sizeOffset * 2, gridSize - 2 + sizeOffset * 2);
+
+                    // Draw Timer Bar above food
+                    ctx.fillStyle = 'white';
+                    ctx.fillRect(bonus.x * gridSize, (bonus.y * gridSize) - 5, (gridSize * (bonus.timer / 50)), 2);
+                }
+
+                ctx.shadowBlur = 0;
+            }
+
+            runGameLoop();
+
+            function collision(pt, array) {
+                for (let i = 1; i < array.length; i++) {
+                    if (pt.x === array[i].x && pt.y === array[i].y) return true;
+                }
+                return false;
+            }
+        }
+
+        // Pong Game
+        function startPong() {
+            // Hide Virtual Controls (Mouse only)
+            const vControls = document.getElementById('virtual-controls');
+            if (vControls) vControls.classList.add('hidden');
+
+            let ballX = canvas.width / 2;
+            let ballY = canvas.height / 2;
+            let ballSpeedX = 2; // Significantly reduced base speed
+            let ballSpeedY = 2;
+
+            let paddle1Y = 100; // Player
+            let paddle2Y = 100; // AI
+            const paddleHeight = 80;
+            const paddleThickness = 10;
+
+            // Allow paddle to hit bottom
+            const maxPaddleY = canvas.height - paddleHeight;
+
+            const ballRadius = 8;
+
+            let playerScore = 0;
+            let aiScore = 0;
+            const winScore = 4; // 4 Rounds now
+
+            gameScoreEl.innerText = `YOU: ${playerScore} | AI: ${aiScore}`;
+
+            canvas.addEventListener('mousemove', (e) => {
+                if (gamePaused) return;
+
+                // Robust Mouse Tracking
+                const rect = canvas.getBoundingClientRect();
+                const scaleY = canvas.height / rect.height; // Relationship bitmap vs. element for Y
+
+                const mouseY = (e.clientY - rect.top) * scaleY;
+
+                // CENTER PADDLE ON MOUSE & CLAMP
+                paddle1Y = mouseY - (paddleHeight / 2);
+
+                // CLAMPING
+                if (paddle1Y < 0) paddle1Y = 0;
+                if (paddle1Y > canvas.height - paddleHeight) paddle1Y = canvas.height - paddleHeight;
+            });
+
+            function runPongLoop() {
+                if (!gameActive) return;
+                requestAnimationFrame(runPongLoop);
+
+                if (gamePaused) return;
+
+                ballX += ballSpeedX;
+                ballY += ballSpeedY;
+
+                // AI Logic (Improved)
+                const paddle2Center = paddle2Y + (paddleHeight / 2);
+                // AI Speed
+                const aiSpeed = 4;
+                if (paddle2Center < ballY - 35) paddle2Y += aiSpeed;
+                else if (paddle2Center > ballY + 35) paddle2Y -= aiSpeed;
+
+                // Clamp AI
+                if (paddle2Y < 0) paddle2Y = 0;
+                if (paddle2Y > canvas.height - paddleHeight) paddle2Y = canvas.height - paddleHeight;
+
+                // BOUNCE OFF TOP/BOTTOM
+                if (ballY - ballRadius < 0 || ballY + ballRadius > canvas.height) {
+                    ballSpeedY = -ballSpeedY;
+                }
+
+                // Ball Collisions with Paddles (Radius based)
+                // PLAYER
+                if (ballX - ballRadius < paddleThickness) {
+                    if (ballY > paddle1Y && ballY < paddle1Y + paddleHeight) {
+                        ballSpeedX = Math.abs(ballSpeedX); // Force right
+                        const deltaY = ballY - (paddle1Y + paddleHeight / 2);
+                        ballSpeedY = deltaY * 0.2;
+                    } else if (ballX < 0) {
+                        aiScore++;
+                        resetBall();
+                    }
+                }
+
+                // AI
+                if (ballX + ballRadius > canvas.width - paddleThickness) {
+                    if (ballY > paddle2Y && ballY < paddle2Y + paddleHeight) {
+                        ballSpeedX = -Math.abs(ballSpeedX); // Force left
+                        const deltaY = ballY - (paddle2Y + paddleHeight / 2);
+                        ballSpeedY = deltaY * 0.2;
+                    } else if (ballX > canvas.width) {
+                        playerScore++;
+                        resetBall();
+                    }
+                }
+
+                gameScoreEl.innerText = `YOU: ${playerScore} | AI: ${aiScore}`;
+
+                if (playerScore >= winScore) { endGame(true); return; }
+                else if (aiScore >= winScore) { endGame(false); return; }
+
+                // Draw
+                ctx.fillStyle = '#050505';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                // Draw Grid
+                ctx.strokeStyle = '#003B00';
+                ctx.lineWidth = 0.5;
+                ctx.beginPath(); ctx.moveTo(canvas.width / 2, 0); ctx.lineTo(canvas.width / 2, canvas.height); ctx.stroke();
+
+                // Player Paddle (Cyan)
+                ctx.fillStyle = '#00FFFF';
+                ctx.shadowBlur = 10;
+                ctx.shadowColor = '#00FFFF';
+                ctx.fillRect(0, paddle1Y, paddleThickness, paddleHeight);
+
+                // AI Paddle (Red)
+                ctx.fillStyle = '#FF3333';
+                ctx.shadowColor = '#FF3333';
+                ctx.fillRect(canvas.width - paddleThickness, paddle2Y, paddleThickness, paddleHeight);
+
+                // Ball (White)
+                ctx.shadowBlur = 0;
+                ctx.beginPath();
+                ctx.arc(ballX, ballY, 8, 0, Math.PI * 2, true);
+                ctx.fillStyle = 'white';
+                ctx.fill();
+            }
+
+            runPongLoop();
+
+            function resetBall() {
+                ballX = canvas.width / 2;
+                ballY = canvas.height / 2;
+                ballSpeedX = -ballSpeedX;
+                // Add some randomness to serve y angle
+                ballSpeedY = (Math.random() * 6) - 3;
+            }
+        }
+    </script>
+</body>
+
+</html>
