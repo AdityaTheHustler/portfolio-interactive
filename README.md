@@ -12,6 +12,13 @@
 
 **A unique, gamified portfolio experience with Matrix-themed UI and interactive hiring protocol.**
 
+<div align="center">
+
+![Portfolio Preview](./portfolio-preview.png)
+*Live portfolio with gamified hiring protocol - Try it at [portfolio-interactive-zeta.vercel.app](https://portfolio-interactive-zeta.vercel.app)*
+
+</div>
+
 ## Overview
 
 This portfolio breaks the traditional mold by implementing a gamified hiring process. Visitors must complete challenges (Snake or Pong) to unlock professional contact information.
