@@ -11,7 +11,7 @@
 5. Deploy (no configuration needed)
 
 **Update after deployment:**
-- Replace all `https://adityagupta.dev/` with your Vercel URL
+- Replace all `portfolio-interactive-zeta.vercel.app` with your Vercel URL
 - Add custom domain in Vercel settings
 
 ### Option 2: Netlify
@@ -40,7 +40,7 @@
 ### 1. Update Domain References
 Search and replace in `index.html`:
 ```
-https://adityagupta.dev/ → your-actual-domain.com
+https://portfolio-interactive-zeta.vercel.app/ → your-actual-domain.com
 ```
 
 ### 2. Create Preview Image
@@ -106,7 +106,7 @@ Both Vercel and Netlify provide free CDN automatically.
 ## Monitoring
 
 ### Check SEO
-- [PageSpeed Insights](https://pagespeed.web.dev/)
+- [PageSpeed Insights](https://portfolio-interactive-zeta.vercel.app)
 - [GTmetrix](https://gtmetrix.com/)
 - Google Search Console
 
