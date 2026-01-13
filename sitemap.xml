@@ -5,8 +5,8 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <!-- Note: Update the <loc> URL with your actual deployed domain -->
     <url>
-        <loc>https://portfolio-interactive.vercel.app/</loc>
-        <lastmod>2026-01-14T01:00:00+05:30</lastmod>
+        <loc>https://portfolio-interactive-zeta.vercel.app/</loc>
+        <lastmod>2026-01-14T03:00:00+05:30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>

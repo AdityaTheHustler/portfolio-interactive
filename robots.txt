@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 
-# Sitemap (update with your actual domain after deployment)
-Sitemap: https://portfolio-interactive.vercel.app/sitemap.xml
+# Sitemap
+Sitemap: https://portfolio-interactive-zeta.vercel.app/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 0
