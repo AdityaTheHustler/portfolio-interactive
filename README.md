@@ -13,7 +13,6 @@
 <div align="center">
 
 ![Portfolio Preview](./image.png)
-*Live portfolio with gamified hiring protocol*
 
 </div>
 
